@@ -1,6 +1,7 @@
 function getFraction() {
-  let text = prompt("Encrypt text:");
-  if (text === null) {
+  let text = prompt("Encrypt up to 5 letters:");
+  if (text === null || text.length >= 6) {
+    alert("Don't make daddy angry");
     return;
   }
   let splitText = text.split("");

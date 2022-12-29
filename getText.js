@@ -1,6 +1,6 @@
 function getText() {
   let fraction = prompt("Insert that fraction over here:");
-  if (fraction === null || isNaN(fraction)) {
+  if (fraction === null || fraction === undefined) {
     return;
   }
   let fractionArray = fraction.split("/");
@@ -51,5 +51,5 @@ function getText() {
   };
 
   let map = output.map((key) => dict[key]);
-  console.log(map.join(""));
+  alert(map.join(""));
 }
